@@ -38,7 +38,7 @@ namespace VersionQuest.Controllers
 
                 for (var i = 0; i < searchArray.Length; i++)
                 {
-                    if (softwareArray[i] <= searchArray[i])
+                    if (softwareArray[i] < searchArray[i])
                     {
                         versionIsGreater = false;
                     }

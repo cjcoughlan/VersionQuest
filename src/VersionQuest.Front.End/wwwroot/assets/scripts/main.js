@@ -15,10 +15,13 @@
             contentType: "application/json",
             dataType: 'json',
             success: function (result) {
-                
+
+                $('#resultsTable tbody').find("tr").remove();
+
                 $.each(result, function (index, value) {
                     console.log(value.name + '--' + value.version);
-                    //console.log(value);
+                    var tableRow = `<tr class="child"><td>${value.name}</td><td>${value.version}</td></tr>`
+                    $('#resultsTable tbody').append(tableRow);
                 });
             }
         })

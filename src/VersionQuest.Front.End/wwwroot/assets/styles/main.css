@@ -1,7 +1,24 @@
-﻿body {
-    background-color: aqua;
+﻿*{
+    padding: 8px;
+    font-family: Verdana;
+}
+body {
+    background-color: #ebebeb;
+    color: #005e85;
 }
 sub{
     font-size:8px;
     color:red;
+}
+table {
+    background-color: #FFF;
+    min-width: 300px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+thead{
+    background-color: #E6E6E6;
+}
+tbody tr:nth-child(even) {
+    background-color: #F6F6F6;
 }
